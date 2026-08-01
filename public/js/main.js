@@ -103,6 +103,7 @@
         </div>
         <div class="catalog-side">
           <span class="seat-pill ${c.full ? "full" : ""}">${c.full ? "Full" : `${c.seatsLeft} seats left`}</span>
+          <span class="seat-meter" aria-hidden="true"><span class="seat-meter-fill ${c.full ? "full" : ""}" style="width:${Math.min(100, Math.round((c.seatsTaken / c.seats) * 100))}%"></span></span>
           <span class="catalog-meta">${c.duration} · ${c.credits} credits</span>
           <button class="btn btn-small btn-outline" data-open-modal data-course="${c.id}" ${c.full ? "disabled" : ""}>
             ${c.full ? "Waitlist" : "Apply"}
