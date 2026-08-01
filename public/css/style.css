@@ -1,20 +1,20 @@
 /* ============ Design tokens ============ */
 :root{
-  --ink:#16233F;
-  --ink-soft:#3B4A6B;
-  --parchment:#EDE6D6;
-  --paper:#F8F4EA;
-  --paper-2:#FDFBF5;
-  --brass:#AD7F35;
-  --brass-dark:#8C6526;
-  --maroon:#7A2A2A;
-  --maroon-dark:#5E1F1F;
-  --line: rgba(22,35,63,0.16);
-  --line-soft: rgba(22,35,63,0.09);
-  --shadow: 0 18px 40px -22px rgba(22,35,63,0.35);
-  --radius: 3px;
-  --serif: "Fraunces", "Iowan Old Style", serif;
-  --sans: "Work Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --ink:#14162B;
+  --ink-soft:#565A78;
+  --parchment:#F4F4F8;
+  --paper:#F4F4F8;
+  --paper-2:#FFFFFF;
+  --brass:#E8A33D;
+  --brass-dark:#C6821F;
+  --maroon:#2F5EFF;
+  --maroon-dark:#1E3FCC;
+  --line: rgba(20,22,43,0.12);
+  --line-soft: rgba(20,22,43,0.07);
+  --shadow: 0 18px 40px -22px rgba(20,22,43,0.35);
+  --radius: 0px;
+  --serif: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --mono: "IBM Plex Mono", monospace;
 }
 
@@ -86,7 +86,7 @@ img{ max-width:100%; display:block; }
 /* ============ Header ============ */
 .site-header{
   position:sticky; top:0; z-index:100;
-  background:rgba(248,244,234,0.92);
+  background:rgba(244,244,248,0.92);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
 }
@@ -190,9 +190,14 @@ img{ max-width:100%; display:block; }
 .catalog-meta{ font-size:13px; color:var(--ink-soft); }
 .seat-pill{
   font-family:var(--mono); font-size:12.5px; padding:5px 12px; border-radius:20px;
-  background:rgba(122,42,42,0.08); color:var(--maroon); white-space:nowrap;
+  background:rgba(47,94,255,0.08); color:var(--maroon); white-space:nowrap;
 }
-.seat-pill.full{ background:rgba(59,74,107,0.1); color:var(--ink-soft); }
+.seat-pill.full{ background:rgba(86,90,120,0.1); color:var(--ink-soft); }
+.seat-meter{
+  width:120px; height:5px; background:var(--line-soft); overflow:hidden; margin-bottom:2px;
+}
+.seat-meter-fill{ height:100%; background:var(--maroon); }
+.seat-meter-fill.full{ background:var(--ink-soft); }
 
 /* ============ Faculty ============ */
 .faculty-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:28px; }
@@ -216,7 +221,7 @@ img{ max-width:100%; display:block; }
 .gallery-item:hover img{ transform:scale(1.06); }
 .gallery-cap{
   position:absolute; left:0; right:0; bottom:0; padding:10px 12px;
-  background:linear-gradient(to top, rgba(22,35,63,0.75), transparent);
+  background:linear-gradient(to top, rgba(20,22,43,0.75), transparent);
   color:#fff; font-size:12.5px; font-family:var(--mono);
   opacity:0; transition:opacity .2s ease;
 }
@@ -248,7 +253,7 @@ img{ max-width:100%; display:block; }
 
 /* ============ Modal ============ */
 .modal-backdrop{
-  position:fixed; inset:0; background:rgba(22,35,63,0.55);
+  position:fixed; inset:0; background:rgba(20,22,43,0.55);
   display:flex; align-items:center; justify-content:center; padding:20px;
   opacity:0; pointer-events:none; transition:opacity .2s ease; z-index:300;
 }
