@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Dashboard | EduGlobal University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css" />
+<style>
+  .dash-wrap{ max-width:840px; margin:0 auto; padding:56px 24px 100px; }
+  .dash-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:40px; flex-wrap:wrap; }
+  .dash-profile{ background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius); padding:26px 30px; margin-bottom:40px; display:flex; gap:28px; flex-wrap:wrap; }
+  .dash-profile div strong{ display:block; font-family:var(--mono); font-size:11px; text-transform:uppercase; color:var(--ink-soft); margin-bottom:4px; }
+  .dash-table{ width:100%; border-collapse:collapse; background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+  .dash-table th, .dash-table td{ text-align:left; padding:13px 16px; border-bottom:1px solid var(--line-soft); font-size:14.5px; }
+  .dash-table th{ font-family:var(--mono); font-size:11px; text-transform:uppercase; color:var(--ink-soft); background:rgba(22,35,63,0.03); }
+  .dash-table tr:last-child td{ border-bottom:none; }
+  .status-pill{ font-family:var(--mono); font-size:12px; padding:4px 10px; border-radius:20px; background:rgba(122,42,42,0.08); color:var(--maroon); }
+  .dash-empty{ color:var(--ink-soft); font-family:var(--mono); font-size:13.5px; padding:20px 0; }
+  .gate{ text-align:center; padding:100px 24px; }
+  .gate h2{ margin-bottom:10px; }
+  .gate p{ color:var(--ink-soft); margin-bottom:24px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="/" class="brand">
+      <span class="seal" aria-hidden="true">
+        <svg viewBox="0 0 60 60" width="34" height="34">
+          <circle cx="30" cy="30" r="27" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="30" cy="30" r="21" fill="none" stroke="currentColor" stroke-width="1"/>
+          <text x="30" y="36" text-anchor="middle" font-family="Fraunces, serif" font-size="20" fill="currentColor">EG</text>
+        </svg>
+      </span>
+      <span class="brand-text">EduGlobal<em>University</em></span>
+    </a>
+    <a href="/" class="btn btn-small btn-outline">← Back to site</a>
+  </div>
+</header>
+
+<div id="gate" class="gate" hidden>
+  <p class="eyebrow">Student Dashboard</p>
+  <h2>Log in to view your dashboard</h2>
+  <p>You need a student account to see your applications here.</p>
+  <a href="/" class="btn btn-primary">Go log in</a>
+</div>
+
+<div id="dashContent" class="dash-wrap" hidden>
+  <div class="dash-head">
+    <div>
+      <p class="eyebrow">Student Dashboard</p>
+      <h2 id="welcomeName">Welcome</h2>
+    </div>
+    <button class="btn btn-small btn-outline" id="logoutBtn">Log Out</button>
+  </div>
+
+  <div class="dash-profile">
+    <div><strong>Name</strong><span id="pName"></span></div>
+    <div><strong>Email</strong><span id="pEmail"></span></div>
+    <div><strong>Student since</strong><span id="pSince"></span></div>
+  </div>
+
+  <h3>My Applications</h3>
+  <div id="appsWrap"><p class="dash-empty">Loading…</p></div>
+</div>
+
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

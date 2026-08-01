@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cs101",
+    "code": "CS 101",
+    "name": "Computer Science",
+    "dept": "School of Engineering",
+    "duration": "4 Years",
+    "credits": 128,
+    "seats": 60,
+    "seatsTaken": 41,
+    "description": "Artificial intelligence, full-stack web development, and cybersecurity, taught through project-based studios rather than lecture halls alone.",
+    "tags": [
+      "AI",
+      "Web Dev",
+      "Security"
+    ]
+  },
+  {
+    "id": "ba101",
+    "code": "BA 101",
+    "name": "Business Administration",
+    "dept": "School of Management",
+    "duration": "3 Years",
+    "credits": 96,
+    "seats": 50,
+    "seatsTaken": 22,
+    "description": "Leadership, global marketing, and finance fundamentals, with a semester-long consultancy project for a real client organization.",
+    "tags": [
+      "Leadership",
+      "Marketing",
+      "Finance"
+    ]
+  },
+  {
+    "id": "me101",
+    "code": "ME 101",
+    "name": "Mechanical Engineering",
+    "dept": "School of Engineering",
+    "duration": "4 Years",
+    "credits": 132,
+    "seats": 45,
+    "seatsTaken": 45,
+    "description": "Robotics, thermodynamics, and manufacturing design, anchored by a fully equipped machine shop and robotics lab.",
+    "tags": [
+      "Robotics",
+      "Thermodynamics",
+      "CAD"
+    ]
+  },
+  {
+    "id": "dz101",
+    "code": "DZ 101",
+    "name": "Design",
+    "dept": "School of Art & Design",
+    "duration": "3 Years",
+    "credits": 90,
+    "seats": 40,
+    "seatsTaken": 12,
+    "description": "UI/UX and graphic design practice, from typography fundamentals to shipped portfolio work with industry critique panels.",
+    "tags": [
+      "UI/UX",
+      "Graphics",
+      "Typography"
+    ]
+  }
+]

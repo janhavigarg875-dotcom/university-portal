@@ -1,0 +1,38 @@
+[
+  {
+    "id": "f1",
+    "name": "Dr. John Doe",
+    "title": "Professor, Computer Science",
+    "dept": "School of Engineering",
+    "since": 2011,
+    "photo": "https://i.pravatar.cc/300?u=1",
+    "bio": "Focuses on distributed systems and applied machine learning; supervises the final-year capstone studio."
+  },
+  {
+    "id": "f2",
+    "name": "Dr. Sarah Smith",
+    "title": "Head, Business School",
+    "dept": "School of Management",
+    "since": 2008,
+    "photo": "https://i.pravatar.cc/300?u=2",
+    "bio": "Former strategy consultant; runs the semester-long live-client consultancy program."
+  },
+  {
+    "id": "f3",
+    "name": "Prof. Mike Ross",
+    "title": "Mechanical Specialist",
+    "dept": "School of Engineering",
+    "since": 2015,
+    "photo": "https://i.pravatar.cc/300?u=3",
+    "bio": "Leads the robotics lab and the university's annual inter-collegiate robotics challenge team."
+  },
+  {
+    "id": "f4",
+    "name": "Prof. Amara Reyes",
+    "title": "Chair, Design",
+    "dept": "School of Art & Design",
+    "since": 2017,
+    "photo": "https://i.pravatar.cc/300?u=4",
+    "bio": "Practicing UX designer; curates the annual student portfolio exhibition."
+  }
+]

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin — EduGlobal Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css" />
+<style>
+  body{ background:var(--paper); }
+  .admin-wrap{ max-width:900px; margin:0 auto; padding:48px 24px 90px; }
+  .admin-head{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; flex-wrap:wrap; gap:12px; }
+  .key-row{ display:flex; gap:10px; margin-bottom:32px; }
+  .key-row input{ flex:1; padding:11px 13px; border:1.5px solid var(--line); border-radius:var(--radius); font-family:var(--mono); font-size:14px; }
+  table{ width:100%; border-collapse:collapse; background:var(--paper-2); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; margin-bottom:40px; }
+  th,td{ text-align:left; padding:12px 14px; border-bottom:1px solid var(--line-soft); font-size:14px; vertical-align:top; }
+  th{ font-family:var(--mono); font-size:11.5px; text-transform:uppercase; color:var(--ink-soft); background:rgba(22,35,63,0.03); }
+  tr:last-child td{ border-bottom:none; }
+  .empty{ color:var(--ink-soft); font-family:var(--mono); font-size:13.5px; padding:16px 0; }
+</style>
+</head>
+<body>
+<div class="admin-wrap">
+  <div class="admin-head">
+    <div>
+      <p class="eyebrow">Backend demo</p>
+      <h2>Submitted Forms</h2>
+    </div>
+    <a href="/" class="btn btn-small btn-outline">← Back to site</a>
+  </div>
+  <p style="color:var(--ink-soft); font-size:14.5px;">This page proves the backend is really persisting data: everything below was written to <code>/data/*.json</code> by the contact and admissions forms. Default admin key is <code>admin123</code> (set via the <code>ADMIN_KEY</code> environment variable on the server).</p>
+
+  <div class="key-row">
+    <input type="text" id="adminKey" placeholder="Admin key" value="admin123" />
+    <button class="btn btn-small btn-primary" id="loadBtn">Load</button>
+  </div>
+
+  <h3>Contact messages</h3>
+  <div id="messagesWrap"><p class="empty">Not loaded yet.</p></div>
+
+  <h3>Applications</h3>
+  <div id="appsWrap"><p class="empty">Not loaded yet.</p></div>
+
+  <h3>Registered students</h3>
+  <div id="usersWrap"><p class="empty">Not loaded yet.</p></div>
+</div>
+
+<script src="/js/admin.js"></script>
+</body>
+</html>

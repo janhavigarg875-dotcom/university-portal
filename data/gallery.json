@@ -1,0 +1,8 @@
+[
+  { "id": "g1", "caption": "Main Quad, Autumn Term", "url": "https://images.unsplash.com/photo-1523050853064-dbad35009711?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g2", "caption": "Library Reading Room", "url": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g3", "caption": "Engineering Building", "url": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g4", "caption": "Commencement Day", "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g5", "caption": "Robotics Lab", "url": "https://images.unsplash.com/photo-1581091870621-1e9b3d1d1b8b?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g6", "caption": "Student Union Hall", "url": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=70" }
+]

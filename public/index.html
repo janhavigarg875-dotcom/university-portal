@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EduGlobal University — Portal</title>
+<meta name="description" content="EduGlobal University portal: programs, faculty, campus life, and admissions." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div class="skip-link"><a href="#main">Skip to content</a></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-row">
+    <a href="#home" class="brand">
+      <span class="seal" aria-hidden="true">
+        <svg viewBox="0 0 60 60" width="34" height="34">
+          <circle cx="30" cy="30" r="27" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="30" cy="30" r="21" fill="none" stroke="currentColor" stroke-width="1"/>
+          <text x="30" y="36" text-anchor="middle" font-family="Fraunces, serif" font-size="20" fill="currentColor">EG</text>
+        </svg>
+      </span>
+      <span class="brand-text">EduGlobal<em>University</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#courses" class="nav-link">Courses</a>
+      <a href="#faculty" class="nav-link">Faculty</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="btn btn-small btn-outline nav-apply" data-open-modal>Apply Now</button>
+      <span class="nav-auth" id="navAuth">
+        <button class="btn btn-small btn-ghost" id="navLoginBtn" data-open-auth>Log In</button>
+      </span>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Est. 1998 &nbsp;·&nbsp; Chartered University</p>
+        <h1>Shape your future<br>with a rigorous<br><span class="ink-underline">education</span>.</h1>
+        <p class="hero-sub">Four schools, forty nationalities, one record: every graduating class outperforms the one before it. Admissions for the next intake are open now.</p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary">Explore Programs</a>
+          <button class="btn btn-ghost" data-open-modal>Apply Now →</button>
+        </div>
+      </div>
+      <div class="hero-panel" aria-hidden="true">
+        <div class="ledger-card">
+          <p class="ledger-title">Campus, at a glance</p>
+          <dl class="ledger-stats" id="statsLedger">
+            <div class="ledger-row"><dt>Programs</dt><dt class="dots"></dt><dd data-stat="programs">—</dd></div>
+            <div class="ledger-row"><dt>Faculty</dt><dt class="dots"></dt><dd data-stat="faculty">—</dd></div>
+            <div class="ledger-row"><dt>Seats open</dt><dt class="dots"></dt><dd data-stat="seatsOpen">—</dd></div>
+            <div class="ledger-row"><dt>Applied today</dt><dt class="dots"></dt><dd data-stat="applicantsToday">—</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="section-head">
+        <p class="eyebrow">01 — About</p>
+        <h2>Built for students who intend to finish what they start.</h2>
+      </div>
+      <div class="about-copy">
+        <p>EduGlobal University is committed to delivering quality education through innovation and rigor. With experienced faculty, purpose-built infrastructure, and placement records we publish rather than promise, we provide a vibrant environment for genuine student growth.</p>
+        <p>Every program below is taught in small studio sections, capped so faculty know your name by week three — not just your seat number.</p>
+        <div class="about-facts">
+          <div class="fact"><strong>96%</strong><span>Placement rate, Class of 2025</span></div>
+          <div class="fact"><strong>1:14</strong><span>Faculty-to-student ratio</span></div>
+          <div class="fact"><strong>40+</strong><span>Nations represented on campus</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COURSES (catalog) ============ -->
+  <section class="section section-alt" id="courses">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">02 — Catalog</p>
+        <h2>Academic Programs</h2>
+        <p class="section-sub">Live seat availability, pulled straight from the admissions ledger.</p>
+      </div>
+
+      <div class="catalog" id="catalogList" aria-live="polite">
+        <p class="loading">Loading course catalog…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FACULTY ============ -->
+  <section class="section" id="faculty">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">03 — Faculty</p>
+        <h2>Meet Our Experts</h2>
+      </div>
+      <div class="faculty-grid" id="facultyGrid" aria-live="polite">
+        <p class="loading">Loading faculty…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section section-alt" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">04 — Campus</p>
+        <h2>Campus Gallery</h2>
+      </div>
+      <div class="gallery-grid" id="galleryGrid" aria-live="polite">
+        <p class="loading">Loading gallery…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="wrap contact-grid">
+      <div class="section-head">
+        <p class="eyebrow">05 — Contact</p>
+        <h2>Send us a message</h2>
+        <p class="section-sub">Admissions replies within 2 business days. This form is live — it's saved by the backend, not just decoration.</p>
+        <ul class="contact-details">
+          <li><strong>Address</strong><span>1 University Way, Springhaven</span></li>
+          <li><strong>Email</strong><span>admissions@eduglobal.edu</span></li>
+          <li><strong>Phone</strong><span>+1 (555) 019-2201</span></li>
+        </ul>
+      </div>
+
+      <form class="card-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cName">Full name</label>
+          <input type="text" id="cName" name="name" autocomplete="name" required />
+          <span class="field-error" data-error-for="name"></span>
+        </div>
+        <div class="form-row">
+          <label for="cEmail">Email</label>
+          <input type="email" id="cEmail" name="email" autocomplete="email" required />
+          <span class="field-error" data-error-for="email"></span>
+        </div>
+        <div class="form-row">
+          <label for="cSubject">Subject</label>
+          <input type="text" id="cSubject" name="subject" placeholder="Admissions, scholarships, campus visit…" />
+        </div>
+        <div class="form-row">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" name="message" rows="4" required></textarea>
+          <span class="field-error" data-error-for="message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span class="btn-label">Send Message</span>
+        </button>
+        <p class="form-status" id="contactStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ APPLY MODAL ============ -->
+<div class="modal-backdrop" id="applyModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="applyModalTitle">
+    <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+    <p class="eyebrow">Admissions</p>
+    <h3 id="applyModalTitle">Apply Now</h3>
+    <form id="applyForm" novalidate>
+      <div class="form-row">
+        <label for="aName">Full name</label>
+        <input type="text" id="aName" name="name" required />
+        <span class="field-error" data-error-for="name"></span>
+      </div>
+      <div class="form-row">
+        <label for="aEmail">Email</label>
+        <input type="email" id="aEmail" name="email" required />
+        <span class="field-error" data-error-for="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="aPhone">Phone</label>
+        <input type="tel" id="aPhone" name="phone" required />
+        <span class="field-error" data-error-for="phone"></span>
+      </div>
+      <div class="form-row">
+        <label for="aCourse">Program</label>
+        <select id="aCourse" name="courseId" required>
+          <option value="">Select a program…</option>
+        </select>
+        <span class="field-error" data-error-for="courseId"></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">
+        <span class="btn-label">Submit Application</span>
+      </button>
+      <p class="form-status" id="applyStatus" role="status"></p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ AUTH MODAL ============ -->
+<div class="modal-backdrop" id="authModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+    <button class="modal-close" id="closeAuthModal" aria-label="Close">×</button>
+    <p class="eyebrow">Student Account</p>
+    <h3 id="authModalTitle">Log In</h3>
+
+    <div class="auth-tabs" role="tablist">
+      <button class="auth-tab active" data-tab="login" role="tab" aria-selected="true">Log In</button>
+      <button class="auth-tab" data-tab="register" role="tab" aria-selected="false">Register</button>
+    </div>
+
+    <form id="loginForm" class="auth-form" novalidate>
+      <div class="form-row">
+        <label for="lEmail">Email</label>
+        <input type="email" id="lEmail" name="email" required />
+        <span class="field-error" data-error-for="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="lPassword">Password</label>
+        <input type="password" id="lPassword" name="password" required />
+        <span class="field-error" data-error-for="password"></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block"><span class="btn-label">Log In</span></button>
+      <p class="form-status" id="loginStatus" role="status"></p>
+    </form>
+
+    <form id="registerForm" class="auth-form" novalidate hidden>
+      <div class="form-row">
+        <label for="rName">Full name</label>
+        <input type="text" id="rName" name="name" required />
+        <span class="field-error" data-error-for="name"></span>
+      </div>
+      <div class="form-row">
+        <label for="rEmail">Email</label>
+        <input type="email" id="rEmail" name="email" required />
+        <span class="field-error" data-error-for="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="rPassword">Password</label>
+        <input type="password" id="rPassword" name="password" minlength="8" required />
+        <span class="field-error" data-error-for="password"></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block"><span class="btn-label">Create Account</span></button>
+      <p class="form-status" id="registerStatus" role="status"></p>
+    </form>
+  </div>
+</div>
+
+<!-- toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <span class="brand-text light">EduGlobal<em>University</em></span>
+      <p class="footer-tag">Chartered 1998. Accredited. Not affiliated with any real institution — this is a web development demo.</p>
+    </div>
+    <div class="footer-links">
+      <p class="footer-heading">Explore</p>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-sub">
+      <p class="footer-heading">Campus newsletter</p>
+      <form id="subscribeForm" class="subscribe-form" novalidate>
+        <input type="email" id="subEmail" name="email" placeholder="you@example.com" required />
+        <button type="submit" class="btn btn-small btn-outline-light">Subscribe</button>
+      </form>
+      <p class="form-status" id="subscribeStatus" role="status"></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> EduGlobal University. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="Twitter">TW</a>
+      <a href="#" aria-label="LinkedIn">LI</a>
+      <a href="#" aria-label="Instagram">IG</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#home" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
