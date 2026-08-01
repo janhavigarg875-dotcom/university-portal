@@ -34,5 +34,41 @@
     "since": 2017,
     "photo": "https://i.pravatar.cc/300?u=4",
     "bio": "Practicing UX designer; curates the annual student portfolio exhibition."
+  },
+  {
+    "id": "f5",
+    "name": "Dr. Elena Vasquez",
+    "title": "Head, Data Science",
+    "dept": "School of Sciences",
+    "since": 2016,
+    "photo": "https://i.pravatar.cc/300?u=5",
+    "bio": "Published statistician turned educator; pairs every cohort with an active partner-lab dataset for their capstone."
+  },
+  {
+    "id": "f6",
+    "name": "Prof. Daniel Okafor",
+    "title": "Studio Lead, Architecture",
+    "dept": "School of Art & Design",
+    "since": 2013,
+    "photo": "https://i.pravatar.cc/300?u=6",
+    "bio": "Licensed architect with a focus on sustainable materials; runs the year-long thesis-building studio."
+  },
+  {
+    "id": "f7",
+    "name": "Dr. Priya Nair",
+    "title": "Dean, School of Law",
+    "dept": "School of Law",
+    "since": 2009,
+    "photo": "https://i.pravatar.cc/300?u=7",
+    "bio": "Former appellate litigator; oversees the moot court program and the student legal-clinic placements."
+  },
+  {
+    "id": "f8",
+    "name": "Dr. Marcus Webb",
+    "title": "Professor, Psychology",
+    "dept": "School of Sciences",
+    "since": 2019,
+    "photo": "https://i.pravatar.cc/300?u=8",
+    "bio": "Cognitive scientist; directs the on-campus behavioral research unit where students complete their lab placements."
   }
 ]

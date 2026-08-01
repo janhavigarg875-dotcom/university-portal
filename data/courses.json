@@ -62,5 +62,69 @@
       "Graphics",
       "Typography"
     ]
+  },
+  {
+    "id": "ds101",
+    "code": "DS 101",
+    "name": "Data Science",
+    "dept": "School of Sciences",
+    "duration": "4 Years",
+    "credits": 124,
+    "seats": 55,
+    "seatsTaken": 18,
+    "description": "Statistics, machine learning, and data visualization, built around real datasets from partner labs rather than textbook exercises.",
+    "tags": [
+      "Statistics",
+      "Machine Learning",
+      "Data Viz"
+    ]
+  },
+  {
+    "id": "ar101",
+    "code": "AR 101",
+    "name": "Architecture",
+    "dept": "School of Art & Design",
+    "duration": "5 Years",
+    "credits": 160,
+    "seats": 35,
+    "seatsTaken": 9,
+    "description": "Structural design, sustainable materials, and studio critique, culminating in a thesis building presented to a licensed-architect review panel.",
+    "tags": [
+      "Design",
+      "Structures",
+      "Sustainability"
+    ]
+  },
+  {
+    "id": "lw101",
+    "code": "LW 101",
+    "name": "Law",
+    "dept": "School of Law",
+    "duration": "4 Years",
+    "credits": 140,
+    "seats": 50,
+    "seatsTaken": 31,
+    "description": "Constitutional law, legal writing, and ethics, with moot court competition every term and a supervised legal-clinic placement in the final year.",
+    "tags": [
+      "Constitutional Law",
+      "Moot Court",
+      "Ethics"
+    ]
+  },
+  {
+    "id": "ps101",
+    "code": "PS 101",
+    "name": "Psychology",
+    "dept": "School of Sciences",
+    "duration": "3 Years",
+    "credits": 92,
+    "seats": 45,
+    "seatsTaken": 38,
+    "description": "Cognition, research methods, and clinical foundations, with lab placements in the on-campus behavioral research unit from second year onward.",
+    "tags": [
+      "Cognition",
+      "Research Methods",
+      "Clinical"
+    ]
   }
 ]

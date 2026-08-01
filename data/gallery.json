@@ -4,5 +4,9 @@
   { "id": "g3", "caption": "Engineering Building", "url": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=70" },
   { "id": "g4", "caption": "Commencement Day", "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=70" },
   { "id": "g5", "caption": "Robotics Lab", "url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=70" },
-  { "id": "g6", "caption": "Student Union Hall", "url": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=70" }
+  { "id": "g6", "caption": "Student Union Hall", "url": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g7", "caption": "Law Library Study Wing", "url": "https://images.unsplash.com/photo-1760166699654-5d0e10f51994?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g8", "caption": "Architecture Studio", "url": "https://images.unsplash.com/photo-1781888688940-5730c3fd5baf?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g9", "caption": "Sunset Over Campus Green", "url": "https://images.unsplash.com/photo-1542557497-23419a438efa?auto=format&fit=crop&w=800&q=70" },
+  { "id": "g10", "caption": "Lecture Hall", "url": "https://images.unsplash.com/photo-1758270704384-9df36d94a29d?auto=format&fit=crop&w=800&q=70" }
 ]
